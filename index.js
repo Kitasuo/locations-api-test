@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 8080;
+var cors = require("cors");
+
+app.use(cors());
 
 let database = [
   { id: 1, latitude: 60, longitude: 70 },
